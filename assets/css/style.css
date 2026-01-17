@@ -1,0 +1,177 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --black: #101010;
+    --gray: #1f1f1f;
+    --lightgray: #595959;
+    --white: #f0f0f0;
+    --orange: #f2881e;
+    --primary-color: var(--white);
+    --secondary-color: var(--orange);
+}
+
+body {
+    background-color: var(--gray);
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1.5em;
+}
+.section-pad {
+    padding: 5em 0;
+}
+.navbar {
+    padding: 1em;
+    background-color: var(--black);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-content ul {
+    list-style: none;
+}
+.navbar-content ul li {
+    display: inline-block;
+}
+.btn-nav {
+    text-decoration: none;
+    display: block;
+    color: var(--primary-color);
+    padding: .5em 1em;
+    border-radius: 1em;
+}
+.btn-highlight {
+    outline: 1px solid var(--black);
+    transition: outline 300ms ease-in-out;
+}
+.btn-highlight:hover {
+    outline: 1px solid var(--secondary-color);
+    transition: outline 300ms ease-in-out;
+}
+.logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.logo i, .logo .highlight {
+    color: var(--secondary-color);
+}
+
+.footer {
+    padding: 1em;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+.hero {
+    padding-block: 3rem;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--black), var(--gray), var(--black));
+    background-size: 200%;
+    background-position: left;
+    animation: anima-bghero 6s ease-in-out alternate infinite;
+}
+@keyframes anima-bghero {
+    from {background-position: left;}
+    to {background-position: right;}
+}
+.hero .tag {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .5em 1em;
+    border-radius: 1em;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+.hero h1 {
+    padding-block: 1.5em .5em;
+    font-size: 2.5em;
+}
+.hero p {
+    padding-block: 1em 3em;
+    max-width: 60%;
+    margin: auto;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.hero-buttons a.btn {
+    text-decoration: none;
+    padding: .5em 1em;
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 1em;
+    transition: transform 100ms linear, box-shadow 200ms linear;
+}
+.hero-buttons a.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 .7em var(--secondary-color);
+    transition: transform 100ms linear, box-shadow 100ms linear;
+}
+.hero-buttons a.btn-primary {
+    text-transform: uppercase;
+    background-color: var(--secondary-color);
+}
+
+.section-title {
+    display: block;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    padding: .5em 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.row {
+    display: flex;
+    gap: 1em;
+}
+.card {
+    display: block;
+    background-color: var(--black);
+    padding: 2em;
+    border-radius: 1em;
+    transition: transform 100ms linear, box-shadow 100ms linear;
+}
+.card:hover {
+    transform: translateY(-5%);
+    box-shadow: 0 .5em .5em var(--secondary-color);
+    transition: transform 100ms linear, box-shadow 100ms linear;
+}
+.card-title {
+    display: block;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+.card-title i {
+    padding-right: .5em;
+}
+.card p {
+    padding-inline: 1em;
+    padding-bottom: 1.5em;
+}
+.code-block {
+    background-color: var(--lightgray);
+}
+
+.apply {
+    background-color: var(--black);
+}

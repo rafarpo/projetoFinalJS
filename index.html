@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Web com JS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <!--<script src="https://unpkg.com/@phosphor-icons/web"></script> -->
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <i class="ph ph-file-js"></i>
+                codando<span class="highlight">.js</span>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#modules" class="btn-nav">Módulos</a></li>
+                    <li><a href="#apply" class="btn-nav btn-highlight">Matricule-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <span class="tag">Matriculas abertas até 20/02/2026</span>
+            <h1>Domine o javascript do zero!</h1>
+            <p>Aprenda a criar sistemas web completos sem depender de IA ou formações longas e teóricas. Entenda a base da programação de forma imersiva e totalmente hands-on.</p>
+
+            <div class="hero-buttons">
+                <a href="#apply" class="btn btn-primary">Começe agora</a>
+                <a href="#modules" class="btn btn-secondary">Explore o conteúdo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="modules" class="section-pad">
+        <div class="container">
+            <h2 class="section-title">O que você aprenderá</h2>
+            <div class="row">
+                <div class="card">
+                    <h3 class="card-title"><i class="ph ph-desktop-tower"></i> Frontend moderno</h3>
+                    <p>Crie interfaces e formulários que respondam aos usuários. Domine HTML5, CSS3 e JavaScript com manipulação de DOM.</p>
+                    <pre class="code-block">
+                        <code>
+                    /* This is a code block in HTML */
+                    body {
+                        font-family: monospace;
+                        background-color: #f4f4f4;
+                        padding: 20px;
+                    }
+                        </code>
+                    </pre>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><i class="ph ph-database"></i> Backend e APIs</h3>
+                    <p>Aprenda os principais conceitos, construa a lógica do servidor, banco de dados e regras de negócio com Node.js</p>
+                    <pre class="code-block">
+                        <code>
+                    /* This is a code block in HTML */
+                    body {
+                        font-family: monospace;
+                        background-color: #f4f4f4;
+                        padding: 20px;
+                    }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply" class="apply section-pad">
+        <div class="container form-wrapper">
+            <h2 class="section-title">Garanta sua vaga</h2>
+            <form id="formApply">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Seu nome">
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Seu email">
+                </div>
+                <div class="input-group">
+                    <label for="pass">Senha</label>
+                    <input type="password" id="pass" placeholder="Sua senha">
+                    <ul class="validation-list">
+                        <li id="req-length" class="invalid"><i class="ph ph-circle"></i> Mínimo 8 caracteres</li>
+                        <li id="req-upper" class="invalid"><i class="ph ph-circle"></i> Pelo menos 1 letra maiuscula</li>
+                        <li id="req-number" class="invalid"><i class="ph ph-circle"></i> Pelo menos 1 número</li>
+                        <li id="req-special" class="invalid"><i class="ph ph-circle"></i> Pelo menos 1 caractere especial</li>
+                    </ul>
+                </div>
+
+                <button type="submit" class="btn btn-full"><i class="ph ph-paper-plane-tilt"></i> Finalizar cadastro</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 CodingLabs. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
