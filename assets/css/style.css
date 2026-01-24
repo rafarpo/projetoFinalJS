@@ -5,13 +5,13 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 :root {
     --black: #101010;
     --gray: #1f1f1f;
     --lightgray: #595959;
     --white: #f0f0f0;
     --orange: #f2881e;
+    --green: #3cf057;
     --primary-color: var(--white);
     --secondary-color: var(--orange);
 }
@@ -20,7 +20,25 @@ body {
     background-color: var(--gray);
     color: var(--primary-color);
 }
-
+a.bt-top {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    border-radius: 50% 0 0 50%;
+    padding: .2em .2em .2em .2em;
+    color: var(--white);
+    font-size: 1em;
+    opacity: .3;
+    transition: opacity 300ms linear, padding 300ms linear;
+}
+a.bt-top:hover {
+    padding: .2em .5em .2em .2em;
+    opacity: 1;
+    transition: opacity 300ms linear, padding 300ms linear;
+}
 .container {
     max-width: 1000px;
     margin: auto;
@@ -174,4 +192,54 @@ body {
 
 .apply {
     background-color: var(--black);
+}
+.form-apply {
+    width: fit-content;
+    margin: auto;
+}
+.validation-list {
+    list-style: none;
+    font-size: .8em;
+    line-height: 1.5em;
+    padding-block: .3em;
+}
+.validation-list .invalid {
+    opacity: .5;
+}
+.validation-list .valid {
+    color: var(--green);
+    opacity: 1;
+}
+.input-group {
+    padding-block: .3em;
+}
+.input-group label, .input-group input {
+    display: block;
+    width: 100%;
+}
+.input-group label {
+    padding-block: .3em;
+}
+.input-group input {
+    padding: .3em;
+    border-radius: 5px;
+    border: 0;
+}
+.input-group input:focus {
+    outline: 2px solid var(--secondary-color);
+}
+.btn-submit {
+    background-color: var(--secondary-color);
+    padding: .3em .5em;
+    border: 0;
+    border-radius: .5em;
+    margin: auto;
+    display: block;
+    color: var(--white);
+    cursor: pointer;
+    transition: opacity 300ms linear;
+}
+.btn-submit.btn-invalid {
+    opacity: .5;
+    cursor: not-allowed;
 }

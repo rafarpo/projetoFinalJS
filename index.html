@@ -10,6 +10,8 @@
     <!--<script src="https://unpkg.com/@phosphor-icons/web"></script> -->
 </head>
 <body>
+    <div id="top"></div>
+    <a href="#top" class="bt-top"><i class="ph ph-arrow-circle-up"></i></a>
     <header class="navbar">
         <div class="navbar-content">
             <div class="logo">
@@ -77,18 +79,18 @@
     <section id="apply" class="apply section-pad">
         <div class="container form-wrapper">
             <h2 class="section-title">Garanta sua vaga</h2>
-            <form id="formApply">
+            <form class="form-apply" id="formApply">
                 <div class="input-group">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" placeholder="Seu nome">
+                    <input type="text" id="name" placeholder="Seu nome" required>
                 </div>
                 <div class="input-group">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Seu email">
+                    <input type="email" id="email" placeholder="Seu email" required>
                 </div>
                 <div class="input-group">
                     <label for="pass">Senha</label>
-                    <input type="password" id="pass" placeholder="Sua senha">
+                    <input type="password" id="pass" placeholder="Sua senha" required>
                     <ul class="validation-list">
                         <li id="req-length" class="invalid"><i class="ph ph-circle"></i> Mínimo 8 caracteres</li>
                         <li id="req-upper" class="invalid"><i class="ph ph-circle"></i> Pelo menos 1 letra maiuscula</li>
@@ -97,7 +99,7 @@
                     </ul>
                 </div>
 
-                <button type="submit" class="btn btn-full"><i class="ph ph-paper-plane-tilt"></i> Finalizar cadastro</button>
+                <button type="submit" id="btnSubmit" class="btn btn-submit btn-invalid" disabled><i class="ph ph-paper-plane-tilt"></i> Finalizar cadastro</button>
             </form>
         </div>
     </section>
